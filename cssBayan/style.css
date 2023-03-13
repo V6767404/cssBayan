@@ -54,7 +54,7 @@ body {
 }
 
 .bayan-input:checked + .bayan-lable > .bayan-img {
-  width: 65%;
+  width: 55%;
 }
 
 .bayan-input:checked + .bayan-lable > .bayan-icon {
@@ -99,7 +99,7 @@ body {
   }
 
   .bayan-lable:hover > .bayan-img {
-    width: 60%;
+    width: 55%;
   }
 
   .bayan-lable:hover > .bayan-icon {
