@@ -1,0 +1,116 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: bisque;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.wrapper {
+  max-width: 55vw;
+  margin: 0 auto;
+  padding: 2vh;
+}
+
+.bayan-title {
+  margin-bottom: 2vh;
+  padding: 0 1vw;
+  font-size: 2rem;
+}
+
+.bayan-input {
+  display: none;
+}
+
+.bayan-lable {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  padding: 2vh 0;
+  border-top: 0.1vh solid grey;
+}
+
+.bayan-subtitle {
+  width: 90%;
+  font-size: 1.5rem;
+  font-weight: 700;
+}
+
+.bayan-icon {
+  width: 2vw;
+  height: 2vw;
+  background-size: cover;
+  background-image: url(./img/plus.svg);
+  transition: all 0.3s;
+}
+
+.bayan-img {
+  margin-bottom: 1.5rem;
+  width: 0%;
+  transition: all 0.3s;
+}
+
+.bayan-input:checked + .bayan-lable > .bayan-img {
+  width: 55%;
+}
+
+.bayan-input:checked + .bayan-lable > .bayan-icon {
+  transform: rotate(45deg);
+}
+
+@media (min-width: 1921px) {
+  html {
+    font-size: 1.5rem;
+  }
+}
+
+@media (max-width: 820px) {
+  html {
+    font-size: 0.5rem;
+  }
+}
+
+@media (max-width: 320px) {
+  html {
+    font-size: 0.35rem;
+  }
+  .bayan-icon {
+    width: 3vw;
+    height: 3vw;
+  }
+}
+
+@media (min-width: 821px) {
+  .bayan-lable {
+    color: blue;
+    cursor: pointer;
+    transition: all 0.3s;
+  }
+
+  .bayan:hover > .bayan-lable {
+    color: black;
+  }
+
+  .bayan-input:checked + .bayan-lable {
+    color: black;
+  }
+
+  .bayan-lable:hover > .bayan-img {
+    width: 55%;
+  }
+
+  .bayan-lable:hover > .bayan-icon {
+    transform: rotate(45deg);
+  }
+
+  .bayan-icon {
+    opacity: 0;
+  }
+
+  .bayan:hover > .bayan-lable > .bayan-icon {
+    opacity: 1;
+  }
+}
